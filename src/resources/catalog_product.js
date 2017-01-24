@@ -49,15 +49,24 @@ var protos = {
     Allows you to retrieve information about the required product.
   */
   info: {
-    mandatory: 'id',
-    optional: 'storeView'
+    mandatory: 'id'
   },
 
   /**
     Allows you to retrieve the list of products.
   */
   list: {
-     optional: 'filters'
+    optional: 'maxpage,curpage,filters,storeView'
+    // modifiers: {
+    //   filters: function(filters) {
+    //     // if filters is not an array, wrap it in an array
+    //     if (!Array.isArray(filters)) {
+    //       return [ filters ];
+    //     }
+
+    //     return filters;
+    //   }
+    // }
   },
 
   /**

@@ -10,7 +10,6 @@ var MagentoError = require('./error.js');
 var slice = Array.prototype.slice;
 var resources = {
   catalogCategory: './resources/catalog_category.js',
-  catalogCategoryAttribute: './resources/catalog_category_attribute.js',
   catalogProduct: './resources/catalog_product.js',
   catalogProductAttribute: './resources/catalog_product_attribute.js',
   catalogProductAttributeMedia: './resources/catalog_product_attribute_media.js',
@@ -39,7 +38,8 @@ var resources = {
   salesOrderCreditMemo: './resources/sales_order_credit_memo.js',
   salesOrderInvoice: './resources/sales_order_invoice.js',
   salesOrderShipment: './resources/sales_order_shipment.js',
-  store: './resources/store.js'
+  store: './resources/store.js',
+  gitsRest: './resources/gits_rest.js'
 };
 var mandatory = {};
 var configDefaults = {
@@ -152,6 +152,8 @@ Magento.prototype.processQueue = function() {
 
 Magento.prototype.methodApply = function(method, callArr, callback) {
   var self = this;
+
+  console.log(callArr);
 
   this.client.methodCall('call', callArr, function(err) {
     --self.queue.running;
