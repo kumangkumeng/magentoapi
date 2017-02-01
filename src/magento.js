@@ -39,7 +39,8 @@ var resources = {
   salesOrderInvoice: './resources/sales_order_invoice.js',
   salesOrderShipment: './resources/sales_order_shipment.js',
   store: './resources/store.js',
-  gitsRest: './resources/gits_rest.js'
+  gitsRest: './resources/gits_rest.js',
+  restDll: './resources/rest_dll.js'
 };
 var mandatory = {};
 var configDefaults = {
