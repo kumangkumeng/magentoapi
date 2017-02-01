@@ -2,7 +2,7 @@
   "name": "magentogits",
   "author": "Tim Marshall <timothyjmarshall@gmail.com>, Rahadian Ahmad <kumangxxx@gits.co.id>",
   "description": "forked version of Magento SOAP API wrapper for Node.js",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "main": "./src/magento",
   "contributors": [
     {
